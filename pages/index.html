@@ -17,36 +17,57 @@
     src="/img/background.jpg"
     alt="background image">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-flex align-items-center">
         <a class="navbar-brand" href="#">VISUAL DESSERT</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">SHOP</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-            </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#">SHOP</a>
+                </li>
             </ul>
         </div>
-        </div>
     </nav>
+      
     <script>
-        const navEl = document.querySelector('.navbar');
+        // Navbar
+        const navMain = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY >= 56) {
-                navEl.classList.add('navbar-scrolled')
+                navMain.classList.add('navbar-scrolled')
             } else if (window.scrollY < 56) {
-                navEl.classList.remove('navbar-scrolled')
+                navMain.classList.remove('navbar-scrolled')
             }
         })
+
+        // Navbar Brand
+        const navBrand = document.querySelector('.navbar-brand');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 56) {
+                navBrand.classList.add('navbar-brand-scrolled')
+            } else if (window.scrollY < 56) {
+                navBrand.classList.remove('navbar-brand-scrolled')
+            }
+        })
+
+        const navLink = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        for (const link of navLink) {
+            if (scrollY >= 56) {
+                link.classList.add('nav-link-scrolled');
+            } else {
+                link.classList.remove('nav-link-scrolled');
+            }
+        }
+        });
+
     </script>
 </body>
 </html>
