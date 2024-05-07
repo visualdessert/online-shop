@@ -1,3 +1,5 @@
+/* Navbar Main */
+
 .navbar-nav {
     padding-right: 20px;
 }
@@ -12,32 +14,38 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Navbar Brand */
 .navbar-brand {
-    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
+    font-weight: 700;
+    color: white !important;
 }
 
 .navbar-brand-scrolled {
-    color: black !important;
     padding-left: 20px;
+    color: black !important;
     transition: 0.2s ease-in-out;
 }
 
+/* Navbar Link */
 .nav-link-scrolled {
     color: black !important;
     transition: 0.2s ease-in-out;
+}
+
+.nav-item {
+    padding-right: 30px;
 }
 
 /* Logo */
 .logo {
     width: 48px;
     padding-left: 20px;
-    transition: filter 0.2s ease-in-out; /* Add transition for smooth effect */
+    transition: filter 0.2s ease-in-out;
 }
-
-/* Remove the unused .logo-scrolled class */
-/* We'll use JavaScript to dynamically apply the filter */
 
 .inverted {
     filter: invert(1);
 }
+

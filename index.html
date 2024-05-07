@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 
     <title>Visual Dessert</title>
 </head>
@@ -21,14 +22,14 @@
         <div class="cont-logo">
             <img class="logo" src="/img/logo-white.png" alt="">
         </div>
-        <a class="navbar-brand" href="#">VISUAL DESSERT</a>
+        <a class="navbar-brand" href="/index.html">VISUAL DESSERT</a>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" style="color: white;" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link active" style="color: white;" aria-current="page" href="/index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: white;" href="#about">ABOUT</a>
+                    <a class="nav-link" style="color: white;" href="#about-us">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: white;" href="#shop">SHOP</a>
@@ -39,7 +40,136 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/caro/asset1.png" class="d-block w-100 caro-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/caro/asset2.png" class="d-block w-100 caro-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/caro/asset3.png" class="d-block w-100 caro-img" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <img src="/img/logo-vsd-white.png" alt="VSD Logo" />
+        <img src="/img/logo-vsd-white.png" alt="VSD Logo" />
+        <img src="/img/logo-vsd-white.png" alt="VSD Logo" />
+        <img src="/img/logo-vsd-white.png" alt="VSD Logo" />
+        <img src="/img/logo-vsd-white.png" alt="VSD Logo" />
+    </div>
       
+    <!-- <div class="container">
+        <div class="row">
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <marquee>
+                    <img src="/img/logo-vsd-white.png" alt="VSD Logo" />
+                </marquee>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Items -->
+    <div class="cont cont-items">
+        <img class="items" src="/img/items.jpg" alt="">
+    </div>
+
+    <div class="cont cont-indulge">
+        <h1>INDULGE IN OUR VISUAL DESSERT</h1>
+    </div>
+
+    <div class="cont cont-items">
+        <img class="items" src="/img/items2.jpg" alt="">
+    </div>
+
+    <!-- About Us -->
+    <div id="about-us"></div>
+    <div class="container cont-about-us">
+        <div class="row ">  
+            <div class="col-md-6 cont-about-us-logo">
+                <img src="/img/logo-vsd-white2.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h1 class="about-us">ABOUT US</h1>
+                <p>
+                    Visual Dessert, we believe dessert should be a feast for the eyes as well as the taste buds.
+                    We take classic and innovative flavors and transform them into edible works of art.
+                    Our passionate pastry chefs use playful techniques and top-quality ingredients to create
+                    desserts that are as captivating to look at as they are delightful to devour.
+                </p>
+                <br>
+                <p>
+                    We are dedicated to using seasonal fruits, handcrafted elements, and artistic plating to
+                    make every dessert a unique experience. Whether you're celebrating a special occasion or
+                    simply indulging your sweet tooth, Visual Dessert is here to turn your dessert dreams into
+                    a delicious reality.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div id="contact-us"></div>
+    <div class="cont cont-contact-us">
+        <h1>GET IN TOUCH</h1>
+    </div>
+
+    <div class="container cont-form">
+        <div class="row ">  
+            <div class="col-md-6">
+                <div class="container px-5 ">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <h1 class="contact-us-form">CONTACT US</h1>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                            <label for="emailAddress">Email Address</label>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="contact" type="text" placeholder="Contact" data-sb-validations="required" />
+                            <label for="contact">Contact</label>
+                            <div class="invalid-feedback" data-sb-feedback="contact:required">Contact is required.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations=""></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder form-success">EMAIL SENT</div>
+                            </div>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">ERROR, EMAIL NOT SENT</div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+            </div>
+            <div class="col-md-6">
+                <h1 class="contact-us">EMAIL</h1>
+            </div>
+        </div>
+    </div>
+
     <script src="/js/index.js"></script>
     <script src="/js/navbar.js"></script>
 </body>
