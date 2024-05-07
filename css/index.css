@@ -1,7 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-255?styles=30118');
 
 body {
-    height: 3000px;
     overflow-x: hidden;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -55,13 +54,6 @@ body::-webkit-scrollbar {
 .marquee img {
     animation: marquee 5s linear infinite;
 }
-
-/* .alert-danger {
-    --bs-alert-color: #ffffff;
-    --bs-alert-bg: #ffffff00;
-    --bs-alert-border-color: #ffffff00;
-    --bs-alert-link-color: #ffffff;
-} */
 
 /* Items */
 .items {
@@ -159,5 +151,20 @@ li {
     color: white;
     font-style: normal;
     font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button */
+.btn-logged {
+    color: black;
+    border-color: rgb(255, 255, 255) !important;
+    background-color: rgb(255, 255, 255) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-logged:hover {
+    color: black;
+    border-color: rgb(255, 255, 255) !important;
+    background-color: rgb(255, 255, 255) !important;
     font-family: Arial, Helvetica, sans-serif;
 }

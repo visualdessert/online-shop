@@ -30,20 +30,20 @@
                     <div class="container px-5">
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="email" />
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
                                 <label for="emailAddress">Email Address</label>
                                 <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="password" type="password" placeholder="Password" data-sb-validations="required" />
+                                <input class="form-control" id="password" type="text" placeholder="Password" data-sb-validations="required" />
                                 <label for="password">Password</label>
                                 <div class="invalid-feedback" data-sb-feedback="password:required">Password is required.</div>
                             </div>
                             <div class="d-grid">
-                                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
-                                    <a class="btn-login" href="/pages/logged.html">
-                                        Log In
+                                <button class="btn btn-primary btn-lg" id="submitButton" type="submit"">
+                                    <a class="btn-login" href="/pages/login.html">
+                                        Register
                                     </a>
                                 </button>
                             </div>
@@ -55,11 +55,11 @@
                             </div>
                             <br>
                             <div class="sign-up">
-                                <i>Not a member?</i>
-                                <a href="/pages/sign-up.html">Register</a>
+                                <i>Already a member?</i>
+                                <a href="/pages/login.html">Log In</a>
                             </div>
                             <div class="terms">
-                                <p>By logging in, I confirm that I have read and agree to the <i class="tos">Terms of Service</i>, <i class="tos">Privacy Policy</i>, and to receive emails and updates.</p>
+                                <p>By joining, I confirm that I have read and agree to the <i class="tos">Terms of Service</i>, <i class="tos">Privacy Policy</i>, and to receive emails and updates.</p>
                             </div>
                         </form>
                     </div>
@@ -67,7 +67,6 @@
             </div>
         </div>
     </div>
-    <script src="/js/account.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://kit.fontawesome.com/03326cc3dd.js" crossorigin="anonymous"></script>
 </body>
