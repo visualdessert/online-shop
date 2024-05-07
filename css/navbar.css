@@ -4,7 +4,7 @@
 
 .navbar {
     background-color: transparent !important;
-    transition: all 0.5s;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-scrolled {
@@ -20,8 +20,24 @@
 .navbar-brand-scrolled {
     color: black !important;
     padding-left: 20px;
+    transition: 0.2s ease-in-out;
 }
 
 .nav-link-scrolled {
     color: black !important;
+    transition: 0.2s ease-in-out;
+}
+
+/* Logo */
+.logo {
+    width: 48px;
+    padding-left: 20px;
+    transition: filter 0.2s ease-in-out; /* Add transition for smooth effect */
+}
+
+/* Remove the unused .logo-scrolled class */
+/* We'll use JavaScript to dynamically apply the filter */
+
+.inverted {
+    filter: invert(1);
 }

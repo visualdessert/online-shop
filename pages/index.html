@@ -18,6 +18,9 @@
     alt="background image">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-flex align-items-center">
+        <div class="cont-logo">
+            <img class="logo" src="/img/logo-white.png" alt="">
+        </div>
         <a class="navbar-brand" href="#">VISUAL DESSERT</a>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -55,6 +58,7 @@
             }
         })
 
+        // Navbar Links
         const navLink = document.querySelectorAll('.nav-link');
         window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
@@ -66,6 +70,19 @@
                 link.classList.remove('nav-link-scrolled');
             }
         }
+        });
+
+        const logo = document.querySelector('.logo');
+        const scrollTrigger = 56; // Adjust this value as needed
+
+        window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+            if (scrollPosition >= scrollTrigger) {
+                logo.classList.add('inverted'); // Add a new class for inversion
+            } else {
+                logo.classList.remove('inverted');
+            }
         });
 
     </script>
