@@ -33,13 +33,13 @@ for (const link of navLink) {
 });
 
 const logo = document.querySelector('.logo');
-const scrollTrigger = 56; // Adjust this value as needed
+const scrollTrigger = 56;
 
 window.addEventListener('scroll', () => {
 const scrollPosition = window.scrollY;
 
     if (scrollPosition >= scrollTrigger) {
-        logo.classList.add('inverted'); // Add a new class for inversion
+        logo.classList.add('inverted');
     } else {
         logo.classList.remove('inverted');
     }
